@@ -1,9 +1,10 @@
+NMAP RESULTS
 PORT   STATE SERVICE VERSION
 80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
 |_http-server-header: Apache/2.4.18 (Ubuntu)
 |_http-title: Apache2 Ubuntu Default Page: It works
 
-
+GOBUSTER RESULTS
 /index.html (Status: 200)
 /server-status (Status: 403)
 /webdav (Status: 401)
