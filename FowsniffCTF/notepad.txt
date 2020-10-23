@@ -1,0 +1,24 @@
+22 ssh
+80 http
+110 pop3
+143 imap
+
+
+
+ user seina with password scoobydoo2 
+nc ip 110
+
+/assets (Status: 301)
+/images (Status: 301)
+/index.html (Status: 200)
+/LICENSE.txt (Status: 200)
+/README.txt (Status: 200)
+/robots.txt (Status: 200)
+/robots.txt (Status: 200)
+/security.txt (Status: 200)
+/server-status (Status: 403)
+
+
+
+The temporary password for SSH is "S1ck3nBluff+secureshell"
+
