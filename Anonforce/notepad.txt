@@ -1,0 +1,47 @@
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8a:f9:48:3e:11:a1:aa:fc:b7:86:71:d0:2a:f6:24:e7 (RSA)
+|   256 73:5d:de:9a:88:6e:64:7a:e1:87:ec:65:ae:11:93:e3 (ECDSA)
+|_  256 56:f9:9f:24:f1:52:fc:16:b7:7b:a3:e2:4f:17:b4:ea (ED25519)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+in ftp server i found user flag
+and there is a directory notread in which i found two files
+private.asc and backup.pgp
+first i used gps2john to create hash of private.asc which contain key for backup.pgs
+
+then i cracked the hash with the help of john
+pass--xbox360
+
+
+
+then i decrypted backup file with this gpg
+
+and i found root password
+
+$6$07nYFaYf$F4VMaegmz7dKjsTukBLh6cP01iMmL7CiQDt1ycIm6a.bsOIBp0DwXVb9XI2EtULXJzBtaMZMNd2tV4uob5RVM0
+
+it is root pass in hash format so i cracked this hash with john and rockyou.txt
+
+and the decrypted pass was -- hikari
+
+now we can login via ssh as root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

